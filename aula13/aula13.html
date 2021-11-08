@@ -13,11 +13,11 @@
         
         document.body.innerHTML += `O seu nome é: ${nome} <br>`;
         document.body.innerHTML += `O seu nome tem: ${nome.length} letras <br>`;
-        document.body.innerHTML += `a segunda letra do seu nome é: ${nome.charAt(1)} <br>`;
-        document.body.innerHTML += `Primeiro indice da letra do seu nome? ${nome.indexOf('t')} <br>`;
-        document.body.innerHTML += `ultimo indice da letra do seu nome? ${nome.lastIndexOf('o')} <br>`;
-        document.body.innerHTML += `as ultimas 3 letras do seu nome são: ${nome.substr(20, 21, 22)} <br>`;
-        document.body.innerHTML += `as palavras do seu nome são: ${nome.split('  ')} <br>`;
+        document.body.innerHTML += `a segunda letra do seu nome é: ${nome[1]} <br>`;
+        document.body.innerHTML += `Primeiro indice da letra do seu nome? ${nome.indexOf('a')} <br>`;
+        document.body.innerHTML += `ultimo indice da letra a do seu nome? ${nome.lastIndexOf('a')} <br>`;
+        document.body.innerHTML += `as ultimas 3 letras do seu nome são: ${nome.slice(-3)} <br>`;
+        document.body.innerHTML += `as palavras do seu nome são: ${nome.split(' ')} <br>`;
         document.body.innerHTML += `seu nome com letras maisculas ${nome.toUpperCase()} <br>`;
         document.body.innerHTML += `seu nome com letras minusculas ${nome.toLowerCase()} <br>`;
 
