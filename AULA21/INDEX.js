@@ -1,0 +1,7 @@
+/*
+
+&& -> VERDADEIRO
+
+|| -> FALSO
+
+*/
