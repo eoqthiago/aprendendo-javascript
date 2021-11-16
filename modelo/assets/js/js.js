@@ -23,5 +23,7 @@ function message(){
         resultado.innerHTML += `<p>${nome.value} ${sobrenome.value} ${peso.value} ${altura.value} </p>`
 
     }
+    
     form.addEventListener('submit', recebeEvento);
 }
+message();
