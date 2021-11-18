@@ -26,9 +26,11 @@ form.addEventListener('submit', function(e){
     const nivelImc = getNivelImc(imc);
 
 
+    const msg = `seu IMC é ${imc} (${nivelImc}).`;
 
-    console.log(imc, nivelImc);
-    // Continua Codigo...
+    setResultado(msg, true);
+
+    
 
 });
 function getNivelImc(imc){
@@ -55,10 +57,18 @@ function criaP (){
     return p;
 }
 
-function setResultado (msg, isValid){
+function setResultado (msg, isValid, nivel){
     const resultado = document.querySelector('#resultado');
     resultado.innerHTML = '';
+
     const p = criaP();
+
+    if(isValid) {
+        p.classList.add('paragrafo-resultado');
+    } else {
+        p.classList.add('bad');
+    }
+    
     p.innerHTML = msg;
     resultado.appendChild(p);
     

@@ -48,7 +48,10 @@ form button:hover{
     transform: scale(1.01);
     background: blueviolet;
 }
-.paragrafo-resultado{
+.paragrafo-resultado, .bad, .risco{
     background: rgb(91, 255, 140);
     padding: 10px 20px;
+}
+.bad{
+    background: rgb(255, 91, 91);
 }
