@@ -57,7 +57,7 @@ function criaP (){
     return p;
 }
 
-function setResultado (msg, isValid, nivel){
+function setResultado (msg, isValid){
     const resultado = document.querySelector('#resultado');
     resultado.innerHTML = '';
 
