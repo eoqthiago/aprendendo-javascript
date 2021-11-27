@@ -3,4 +3,5 @@
 // var tem escopo de funçao
 
 let
+
 var
